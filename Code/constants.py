@@ -9,20 +9,21 @@ import plotly.graph_objects as go
 import plotly.express as px
 import plotly.io as pio
 from utils import *
-pio.renderers.default = "iframe"
+pio.renderers.default = "browser"
 
 
 
 
 root = Path(__file__).parent.parent
-
-train_data = 'https://github.com/adam-213/MVO2022/raw/main/Data/HDP.txt'
-test_data = 'https://github.com/adam-213/MVO2022/raw/main/Data/HDP_test.txt'
 for file in root.joinpath('Data').glob("*"):
     if file.suffix == '.zip':
         print("Unzipping")
-        unzip()
+        unzip_data()
         break
+
+train_data = root.joinpath("data/hdp.txt")
+test_data = root.joinpath("data/hdp_test.txt")
+
 
 train = pd.read_csv(train_data)
 test = pd.read_csv(test_data)

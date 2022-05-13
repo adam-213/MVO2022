@@ -10,6 +10,9 @@ else:
 
 back = df.query("type == 'back'")
 
+
+
+
 fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(21, 7))
 ax1.set_xscale("log")
 # #ax1.set_yscale("log")
@@ -27,6 +30,7 @@ ax3.set_ylabel("Value of Beta2")
 bss = [[0, 0, 0], [1, 1, 1], [-1, -1, -1], [0.1, 0.9, 1.1]]
 bss = [tuple(i) for i in bss]
 linestylemap = dict(zip(bss, ["-", "--", ":", "-.",]))
+np.random.seed(42)
 alphas = [0.1, 0.51]
 deltas = [0.2, 0.9]
 colormap = {}
@@ -54,11 +58,24 @@ for c in tqdm(range(len(back))):
         tuple(eval("[" + c["start"][1:-1].strip().replace(" ", ",").replace(",,", ",").strip(",") + "]"))],
              color=colormap[(c["alpha"], c["delta"])])
     
+with open(root.joinpath("Data/backtracking_result_wanted.pickle"), "rb") as f:
+    back_wanted = pickle.load(f)
+
+xis = back_wanted[0]
+x1 = [i[0] for i in xis]
+x2 = [i[1] for i in xis]
+x3 = [i[2] for i in xis]
+
+xs = tuple(range(len(back_wanted[0])))
+pa = 1
+ax1.plot(x1, label="Wanted", linestyle="-", color="black")
+ax2.plot(x2, label="Wanted", linestyle="-", color="black")
+ax3.plot(x3, label="Wanted", linestyle="-", color="black")
 
 ax1.axhline(y=-720.71, linestyle="dotted", color="black")
 ax2.axhline(y=3.2055, linestyle="dotted", color="black")
 ax3.axhline(y=11.4709, linestyle="dotted", color="black")
 fig.tight_layout()
-fig.suptitle("BackTracking metoda")
+fig.suptitle("Backtracking krok")
 fig.savefig(root.joinpath("images/Backtracking.png"))
 fig.show()

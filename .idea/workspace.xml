@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="449de53c-d983-4be3-b55f-e185f61d1e1c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Data/backtracking_result_wanted.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/NN_Prediction_Graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/NN_Prediction_Graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/NN_Training.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/NN_Training.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/graf_konvergencie_back.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/graf_konvergencie_back.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/BarBor.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Data/BarBor.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/BarBor_results.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Data/BarBor_results.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/HDP.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Data/HDP.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/HDP_test.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Data/HDP_test.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/backtracking.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Data/backtracking.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/backtracking_result.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Data/backtracking_result.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/cauchy.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Data/cauchy.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/cauchy_results.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Data/cauchy_results.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/grad_const.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Data/grad_const.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/grad_const_result.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Data/grad_const_result.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/xis_hodnoty.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Data/xis_hodnoty.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Backtracking.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/Backtracking.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="293JitLp4tFY3eQM8uk3efMqVaa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/Docs_Uniba/L2/MVO/projekt",
+    "settings.editor.selected.configurable": "MTConfigurable"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.utils">
+    <configuration name="NN_Prediction_Graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="projekt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/NN_Prediction_Graph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="backtracking" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="projekt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/backtracking.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="graf_konvergencie_back" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="projekt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/graf_konvergencie_back.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="projekt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.utils" />
+        <item itemvalue="Python.graf_konvergencie_back" />
+        <item itemvalue="Python.backtracking" />
+        <item itemvalue="Python.NN_Prediction_Graph" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="449de53c-d983-4be3-b55f-e185f61d1e1c" name="Changes" comment="" />
+      <created>1652335968961</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652335968961</updated>
+      <workItem from="1652335986760" duration="16000" />
+      <workItem from="1652341451596" duration="7827000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Code/NN_Prediction_Graph.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Code/graf_konvergencie_back.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/projekt$NN_Prediction_Graph.coverage" NAME="NN_Prediction_Graph Coverage Results" MODIFIED="1652344510056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Code" />
+    <SUITE FILE_PATH="coverage/projekt$graf_konvergencie_back.coverage" NAME="graf_konvergencie_back Coverage Results" MODIFIED="1652359048630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Code" />
+    <SUITE FILE_PATH="coverage/projekt$utils.coverage" NAME="utils Coverage Results" MODIFIED="1652359898147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Code" />
+    <SUITE FILE_PATH="coverage/projekt$backtracking.coverage" NAME="backtracking Coverage Results" MODIFIED="1652346773000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Code" />
+  </component>
+</project>

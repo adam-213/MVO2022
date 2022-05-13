@@ -41,7 +41,8 @@ class Mydata(torch.utils.data.Dataset):
             self.scaler = scaler
         self.X = self.scaler.transform(self.X)
         self.X = torch.from_numpy(self.X).float()
-        self.y = torch.from_numpy(self.y).float()
+        if self.y is not None:
+            self.y = torch.from_numpy(self.y).float()
 
     def __len__(self):
         return len(self.X)

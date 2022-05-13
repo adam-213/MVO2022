@@ -32,7 +32,7 @@ def strarr2tuple(s):
 
     return tuple(map(float, s))
 
-def unzip():
+def unzip_data():
     import time
     from constants import root
     import zipfile
@@ -49,7 +49,7 @@ def unzip():
         if file.suffix == '.zip':
             file.unlink()
 
-def zip():
+def zip_data():
     import shutil
     import zipfile
     from constants import root
@@ -65,5 +65,6 @@ def zip():
         with zipfile.ZipFile(file.with_suffix('.zip'), 'w', compression=zipfile.ZIP_DEFLATED, allowZip64=True) as zip:
             zip.write(file, arcname=file.name)
         file.unlink()
+    print("Zip done")
 
 

@@ -17,21 +17,26 @@ def load():
     return model, scaler
 
 
-def predict(test, model, scaler):
-    testloader = Mydata(test.iloc[:, [2, 3]].values, test.iloc[:, [1]].values, scaler)
+def predict(testset, model, scaler):
+    if type(testset) == str and testset == "test":
+        testloader = Mydata(test.iloc[:, [2, 3]].values, test.iloc[:, [1]].values, scaler)
+    elif type(testset) == str and testset == "train":
+        testloader = Mydata(train.iloc[:, [2, 3]].values, train.iloc[:, [1]].values, scaler)
+    else:
+        testloader = Mydata(testset,np.array([1] * testset.shape[0]), scaler)
     y_hat = []
     with torch.no_grad():
         for X, y in testloader:
             y_hat.append(model.forward(X))
 
-    return y_hat
+    return [y.item() for y in y_hat]
 
 
 model, scaler = load()
-y_hat_test = predict(test, model, scaler)
-y_hat_test = [y.item() for y in y_hat_test]
-y_hat_train = predict(train, model, scaler)
-y_hat_train = [y.item() for y in y_hat_train]
+y_hat_test = predict("test", model, scaler)
+y_hat_test = [y for y in y_hat_test]
+y_hat_train = predict("train", model, scaler)
+y_hat_train = [y for y in y_hat_train]
 
 fig = go.Figure()
 fig.add_trace(go.Scatter3d(x=test.iloc[:, 2], y=test.iloc[:, 3], z=y_hat_test, name='NN_Predicted_Test_Scatter'))
@@ -47,14 +52,23 @@ ys = beta[2] * y
 z = beta[0] + x * beta[1] + y * beta[2]
 
 fig.add_trace(go.Scatter3d(x=x, y=y, z=z, mode="lines", name='Linear_Regression_Line', marker={"size": 20}))
+
+preticted = []
+import random
+x = [x + random.random()*random.randint(1,10) for x in x]
+y = [y + random.random()*random.randint(1,10) for y in y]
+preticted.append(predict(np.array((x,y)).T, model, scaler))
+
+fig.add_trace(go.Scatter3d(x=x, y=y, z=preticted[0], mode="lines", name='NN_Predicted_Line', marker={"size": 20}))
+
 fig.show()
 
-import numpy as np
-yp = y_hat_test
-yt = test.iloc[:, 1].values
-corr_matrix = np.corrcoef(yt, yp)
-corr = corr_matrix[0,1]
-R_sq = corr**2
+y_lin_train = beta[0] + beta[1] * train.iloc[:, 2] + beta[2] * train.iloc[:, 3]
+y_lin_test = beta[0] + beta[1] * test.iloc[:, 2] + beta[2] * test.iloc[:, 3]
 
-print('R_sq: ', R_sq)
-#Hey that's not bad at all
+from sklearn.metrics import r2_score
+
+print('R2_Score_Train_Linear: ', r2_score(train.iloc[:, 1], y_lin_train))
+print("R2_score_Test_Linear: ", r2_score(test.iloc[:, 1], y_lin_test))
+print("R2_Score_Train_NN: ", r2_score(train.iloc[:, 1], y_hat_train))
+print("R2_score_Test_NN: ", r2_score(test.iloc[:, 1], y_hat_test))
